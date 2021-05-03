@@ -1,0 +1,81 @@
+.container {
+    width: 100%;
+    margin-bottom: 20vh;
+    margin-top: 7vh;
+}
+
+.nomSalon {
+    line-height: 2px;
+}
+
+section {
+    width: 100%;
+}
+
+.hair,
+.barbe {
+    width: 23px;
+    height: 23px;
+}
+
+.list-group li, .list-group ul {
+    background-color: #f7f7f7;
+}
+
+.nav-tabs{
+border-bottom: none;
+
+}
+img {
+    width: 100%;
+    height: 550px;
+}
+a.carousel-control-next {
+    display: none;
+}
+
+.priseRDVTitre,
+.priseClickTitre {
+    border: none;
+    background-color: white;
+}
+
+.col-8 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.rdvButton {
+    padding-right: 0px;
+}
+
+.titreCoupe {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.jour{
+
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 600; 
+}
+
+.duree {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: small;
+    color: grey;
+    font-weight: 700;
+}
+
+.prix {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-weight: 700;
+}

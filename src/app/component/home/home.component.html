@@ -1,0 +1,226 @@
+<main class="container">
+    <section class="row mt-2 mb-1 mx-0">
+        <article class="col-8 nomSalon">
+            <h2 class="font-weight-bold">Barber Shave</h2>
+            <p><i class="fas fa-map-marker-alt mr-1"></i><u><a class="text-dark"
+                        href="https://goo.gl/maps/JeXdytk7UcX9HCXV9" target="_blank">328 rue Jean Jaurès, 59170
+                        Croix</a></u></p>
+
+        </article>
+        <article class="col-2 d-flex flex-column justify-content-center"><button class="btn btn-outline-dark w-100"><i
+                    class="fas fa-shopping-cart mr-2"></i>click & collect</button></article>
+        <article class="col-2 d-flex flex-column justify-content-center rdvButton"><a class="btn btn-dark w-100" href="#rdv"><i
+                    class="far fa-calendar-alt mr-3"></i>Prendre Rdv</a>
+        </article>
+    </section>
+    <section class="row mx-0 mt-2 mb-4">
+        <ngb-carousel>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="assets/images/salon1.jpg" alt="Random first slide">
+                </div>
+                <div class="carousel-caption">
+                    <h3>Salon principale</h3>
+                    <p>Notre salon VIP pour nos meilleurs clients.</p>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="assets/images/salon2.jpg" alt="Random second slide">
+                </div>
+                <div class="carousel-caption">
+                    <h3>Avec Frédérico</h3>
+                    <p>Vous serez toujours le bienvenue.</p>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="assets/images/salon3.jpg" alt="Random third slide">
+                </div>
+                <div class="carousel-caption">
+                    <h3>Coupe à la brosse</h3>
+                    <p>Avec Ahmed et ses 15 ans d'expérience.</p>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="assets/images/salon4.jpg" alt="Random third slide">
+                </div>
+                <div class="carousel-caption">
+                    <h3>Le Salon dame</h3>
+                    <p>Avec de nombreux soins pour les cheveux et le visage.</p>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </section>
+    <section class="mx-0 my-4">
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+            <li [ngbNavItem]="1" class="ml-0">
+                <a ngbNavLink class="priseRDVTitre text-dark pl-0"  [ngStyle]="{'border-bottom': active==1  ? 'solid 2px black' : 'none'}">Prendre RDV</a>
+                <ng-template ngbNavContent>
+                    <article class="row ml-0 w-50 pl-0 mb-3"  id="rdv">
+                        <h2>Réserver en ligne pour un RDV chez Barber Shave</h2>
+                        <p><small>Gratuitement - Paiement sécurisée - Confirmation immédiate</small></p>
+                    </article>
+                    <article class="row m-0 p-0" >
+                        <section class="col-7 pl-0">
+                            <article>
+                                <h5 class="align-self-center"> <img src="assets/images/hair.png"
+                                        class="hair mb-1">CHEVEUX</h5>
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex flex-row py-2 px-3">
+                                        <label class="col-8 ml-0 align-self-center titreCoupe mb-0">Coupe + shampoing +
+                                            brushing</label>
+                                        <div class="col-2 mr-0 pr-0 align-self-center">
+                                            <div class="prix text-center">20&euro;</div>
+                                            <div class="duree text-center">60 min</div>
+                                        </div>
+                                        <div class="col-2 align-self-center  mr-0 pr-0 text-center"><button
+                                                class="btn btn-outline-dark py-1 px-2">Choisir</button></div>
+                                    </li>
+                                    <li class="list-group-item d-flex flex-row py-2 px-3">
+                                        <label class="col-8 ml-0 align-self-center titreCoupe mb-0">Shampoing +
+                                            brunshing</label>
+                                        <div class="col-2 mr-0 pr-0 align-self-center">
+                                            <div class="prix text-center">18&euro;</div>
+                                            <div class="duree text-center">45 min</div>
+                                        </div>
+                                        <div class="col-2 align-self-center  mr-0 pr-0 text-center"><button
+                                                class="btn btn-outline-dark py-1 px-2">Choisir</button></div>
+                                    </li>
+                                    <li class="list-group-item d-flex flex-row py-2 px-3">
+                                        <label class="col-8 ml-0 align-self-center titreCoupe mb-0">Forfait Coupe +
+                                            Dessein + Barbe</label>
+                                        <div class="col-2 mr-0 pr-0 align-self-center">
+                                            <div class="prix text-center">25&euro;</div>
+                                            <div class="duree text-center">45 min</div>
+                                        </div>
+                                        <div class="col-2 align-self-center  mr-0 pr-0 text-center"><button
+                                                class="btn btn-outline-dark py-1 px-2">Choisir</button></div>
+                                    </li>
+                                    <li class="list-group-item d-flex flex-row py-2 px-3">
+                                        <label class="col-8 ml-0 align-self-center titreCoupe mb-0">Coiffure + Barbe
+                                            dessinée au coupe chou</label>
+                                        <div class="col-2 mr-0 pr-0 align-self-center">
+                                            <div class="prix text-center">25&euro;</div>
+                                            <div class="duree text-center">45 min</div>
+                                        </div>
+                                        <div class="col-2 align-self-center  mr-0 pr-0 text-center"><button
+                                                class="btn btn-outline-dark py-1 px-2">Choisir</button></div>
+                                    </li>
+                                    <li class="list-group-item d-flex flex-row py-2 px-3">
+                                        <label class="col-8 ml-0 align-self-center titreCoupe mb-0">Coiffure + Barbe
+                                            tondeuse</label>
+                                        <div class="col-2 mr-0 pr-0 align-self-center">
+                                            <div class="prix text-center">20&euro;</div>
+                                            <div class="duree text-center">30 min</div>
+                                        </div>
+                                        <div class="col-2 align-self-center  mr-0 pr-0 text-center"><button
+                                                class="btn btn-outline-dark py-1 px-2">Choisir</button></div>
+                                    </li>
+                                </ul>
+                            </article>
+                            <article class="mt-4">
+                                <h5> <img src="assets/images/barbe.png" class="barbe mb-1"> BARBIER</h5>
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex flex-row py-2 px-3">
+                                        <label class="col-8 ml-0 align-self-center titreCoupe mb-0">Taille barbe à la
+                                            tondeuse</label>
+                                        <div class="col-2 mr-0 pr-0 align-self-center">
+                                            <div class="prix text-center">15&euro;</div>
+                                            <div class="duree text-center">30 min</div>
+                                        </div>
+                                        <div class="col-2 align-self-center  mr-0 pr-0 text-center"><button
+                                                class="btn btn-outline-dark py-1 px-2">Choisir</button></div>
+                                    </li>
+                                    <li class="list-group-item d-flex flex-row py-2 px-3">
+                                        <label class="col-8 ml-0 align-self-center titreCoupe mb-0">Taille barbe long
+                                            sculptée</label>
+                                        <div class="col-2 mr-0 pr-0 align-self-center">
+                                            <div class="prix text-center">20&euro;</div>
+                                            <div class="duree text-center">30 min</div>
+                                        </div>
+                                        <div class="col-2 align-self-center  mr-0 pr-0 text-center"><button
+                                                class="btn btn-outline-dark py-1 px-2">Choisir</button></div>
+                                    </li>
+                                    <li class="list-group-item d-flex flex-row py-2 px-3">
+                                        <label class="col-8 ml-0 align-self-center titreCoupe mb-0">Taille barbe avec
+                                            dessin de barbe</label>
+                                        <div class="col-2 mr-0 pr-0 align-self-center">
+                                            <div class="prix text-center">25&euro;</div>
+                                            <div class="duree text-center">45 min</div>
+                                        </div>
+                                        <div class="col-2 align-self-center  mr-0 pr-0 text-center"><button
+                                                class="btn btn-outline-dark py-1 px-2">Choisir</button></div>
+                                    </li>
+                                    <li class="list-group-item d-flex flex-row py-2 px-3">
+                                        <label class="col-8 ml-0 align-self-center titreCoupe mb-0">Rasage à l'ancienne
+                                            (au coupe-choux)</label>
+                                        <div class="col-2 mr-0 pr-0 align-self-center">
+                                            <div class="prix text-center">25&euro;</div>
+                                            <div class="duree text-center">45 min</div>
+                                        </div>
+                                        <div class="col-2 align-self-center  mr-0 pr-0 text-center"><button
+                                                class="btn btn-outline-dark py-1 px-2"  >Choisir</button></div>
+                                    </li>
+                                </ul>
+                            </article>
+                        </section>
+                        <section class="col-5 pr-0">
+                            <h5 class="align-self-center"> <img src="assets/images/clock.png"
+                                    class="hair mb-1 mr-1">HORAIRES</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex flex-row justify-content-between">
+                                    <div class="jour">Lundi</div>
+                                    <div>Fermé</div>
+                                </li>
+                                <li class="list-group-item d-flex flex-row justify-content-between">
+                                    <div class="jour">Mardi</div>
+                                    <div>10:00 - 19:00</div>
+                                </li>
+                                <li class="list-group-item d-flex flex-row justify-content-between">
+                                    <div class="jour">Mercredi</div>
+                                    <div>10:00 - 19:00</div>
+                                </li>
+                                <li class="list-group-item d-flex flex-row justify-content-between">
+                                    <div class="jour">Jeudi</div>
+                                    <div>10:00 - 19:00</div>
+                                </li>
+                                <li class="list-group-item d-flex flex-row justify-content-between">
+                                    <div class="jour">Vendredi</div>
+                                    <div>10:00 - 19:00</div>
+                                </li>
+                                <li class="list-group-item d-flex flex-row justify-content-between">
+                                    <div class="jour">Samedi</div>
+                                    <div>10:00 - 19:00</div>
+                                </li>
+                                <li class="list-group-item d-flex flex-row justify-content-between">
+                                    <div class="jour">Dimanche</div>
+                                    <div>Fermé</div>
+                                </li>
+                            </ul>
+                        </section>
+                    </article>
+                </ng-template>
+            </li>
+            <li [ngbNavItem]="2">
+                <a ngbNavLink class="priseClickTitre text-dark" [ngStyle]="{'border-bottom': active==2  ? 'solid 2px black' : 'none'}">Click & Collect</a>
+                <ng-template ngbNavContent>
+                    <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four
+                        loko
+                        farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk
+                        aliquip jean shorts
+                        ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus
+                        mollit. Keytar
+                        helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio
+                        cillum wes anderson
+                        8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party
+                        scenester
+                        stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                </ng-template>
+            </li>
+        </ul>
+        <div [ngbNavOutlet]="nav" class="mt-2"></div>
+    </section>
+    <section class="row"></section>
+</main>
